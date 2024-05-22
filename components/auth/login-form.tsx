@@ -71,9 +71,9 @@ export const LoginForm = () => {
   return (
     <CardWrapper
       headerLabel="Welcome back"
-      backButtonLabel="Don't have an account?"
+      backButtonLabel="還沒註冊嗎?"
       backButtonHref="/auth/register"
-      showSocial
+      showSocial={false}
     >
       <Form {...form}>
         <form 
@@ -112,7 +112,7 @@ export const LoginForm = () => {
                         <Input
                           {...field}
                           disabled={isPending}
-                          placeholder="john.doe@example.com"
+                          placeholder="ntu.nurse@example.com"
                           type="email"
                         />
                       </FormControl>
@@ -125,7 +125,7 @@ export const LoginForm = () => {
                   name="password"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Password</FormLabel>
+                      <FormLabel>密碼</FormLabel>
                       <FormControl>
                         <Input
                           {...field}
@@ -141,7 +141,7 @@ export const LoginForm = () => {
                         className="px-0 font-normal"
                       >
                         <Link href="/auth/reset">
-                          Forgot password?
+                          忘記密碼?
                         </Link>
                       </Button>
                       <FormMessage />
@@ -158,7 +158,7 @@ export const LoginForm = () => {
             type="submit"
             className="w-full"
           >
-            {showTwoFactor ? "Confirm" : "Login"}
+            {showTwoFactor ? "確認" : "登入"}
           </Button>
         </form>
       </Form>

@@ -17,15 +17,15 @@ export default function Home() {
           "text-6xl font-semibold text-white drop-shadow-md",
           font.className,
         )}>
-          🔐 Auth
+          NTU 孕期護理
         </h1>
         <p className="text-white text-lg">
-          A simple authentication service
+          任何時候，任何地點，照顧您的孕期
         </p>
         <div>
           <LoginButton  asChild>
             <Button variant="secondary" size="lg">
-              Sign in
+              登入
             </Button>
           </LoginButton>
         </div>
