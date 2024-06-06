@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
-import { useMessageContext } from '../page';
+import { useMessageContext } from './MessageContext';
 import useTypingEffect from "../../_hooks/useTypingEffect";
 import {
   Card,

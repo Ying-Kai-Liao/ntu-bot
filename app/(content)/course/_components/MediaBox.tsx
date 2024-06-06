@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMessageContext } from '../page';
+import { useMessageContext } from './MessageContext';
 import Image from 'next/image';
 
 const MediaBox: React.FC = () => {
